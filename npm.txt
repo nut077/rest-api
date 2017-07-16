@@ -1,0 +1,3 @@
+npm init
+npm i express --save body-parser
+npm i --save-dev nodemon babel-cli babel-preset-env babel-plugin-transform-object-rest-spread
