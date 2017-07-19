@@ -1,3 +1,8 @@
 npm init
 npm i express --save body-parser
 npm i --save-dev nodemon babel-cli babel-preset-env babel-plugin-transform-object-rest-spread
+npm i --save bcrypt
+npm i --save jsonwebtoken
+
+right click on start window --> Windows PowerShell Module
+$ENV:SECRET_KEY = 'eyJhbGci0iJIUzI1NiIsInR5cCI6IkpXVCJ9'

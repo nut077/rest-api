@@ -13,10 +13,16 @@ const UserController = {
     })
   },
   create(req, res) {
-    const user = Users.create({email: req.body.email});
-    res.json({
-      user: UserSerializers.for('create', user)
-    })
+    const {email, password} = req.body;
+    Users.create(email, password).then(
+      user =>
+        res
+          .header('Authorization', `Bearer ${Users.genToken(user)}`)
+          .status(201)
+          .json({
+        user: UserSerializers.for('create', user)
+      })
+    )
   }
 };
 
