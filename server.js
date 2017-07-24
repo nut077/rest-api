@@ -12,8 +12,8 @@ function setupRoutes(app) {
   );
 
   features.forEach(feature => {
-    const router = express.Router()
-    const routes = require(`${APP_DIR}/${feature}/routes.js`)
+    const router = express.Router();
+    const routes = require(`${APP_DIR}/${feature}/routes.js`);
 
     routes.setup(router);
     app.use(`/${feature}`, router);

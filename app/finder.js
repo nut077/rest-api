@@ -12,10 +12,10 @@ const Finder = {
     return this.collection();
   },
   find(id) {
-    return this.collection().find(record => record.id === id);
+    return this.collection().find(record => record.id === +id);
   },
   findIndex(id) {
-    return this.collection().findIndex(record => record.id === id);
+    return this.collection().findIndex(record => record.id === +id);
   }
 };
 
