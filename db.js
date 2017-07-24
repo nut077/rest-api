@@ -23,20 +23,20 @@ export default {
       title: 'Introduction to Ruby',
       content: 'Lorem Ipsum',
       authorId: 2
-    },
+    }
   ],
   users: [
     {
       id: 1,
       email: 'nut@gmail.com',
       isAdmin: true,
-      password: 'sssss'
+      password: '$2a$12$pSH/XM9eDztcwlFDltItb.MSv/kVihJgNcRc0h.dfUlj6MZqJBg6m'
     },
     {
       id: 2,
       email: 'freedom@gmail.com',
       isAdmin: false,
-      password: 'aaaaa'
+      password: '$2a$12$pSH/XM9eDztcwlFDltItb.MSv/kVihJgNcRc0h.dfUlj6MZqJBg6m'
     }
   ]
 }
