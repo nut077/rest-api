@@ -4,6 +4,7 @@ npm i --save-dev nodemon babel-cli babel-preset-env babel-plugin-transform-objec
 npm i --save bcrypt
 npm i --save jsonwebtoken
 npm i --save cors
+npm i dotenv --save
 
 right click on start window --> Windows PowerShell Module
 $ENV:SECRET_KEY = 'eyJhbGci0iJIUzI1NiIsInR5cCI6IkpXVCJ9'
