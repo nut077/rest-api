@@ -3,8 +3,9 @@ import ArticlesPolicy from './policy';
 
 const ArticlesController = {
   getAll(req, res) {
-    console.log(req.user);
-    res.json({articles: Articles.findAll()})
+    const {page, perPage, categoryId} = req.query;
+    const articles = Articles.paginate({categoryId}, page, perPage);
+    res.json({articles})
   },
   get(req, res) {
     res.json({article: Articles.find(req.params.id)})
